@@ -7,7 +7,7 @@ const initialState = {
 type ActionType =
 	| { type: 'incrementar' }
 	| { type: 'decrementar' }
-	| { type: 'custom'; payload: number };
+	| { type: 'custom', payload: number };
 
 const contadorReducer = (state: typeof initialState, action: ActionType) => {
 	switch (action.type) {
